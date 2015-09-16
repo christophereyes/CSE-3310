@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mymav_bg2">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_section5"
+        android:id="@+id/titleTmeConstraint"
+        android:textColor="#ffffffff"
+        android:textIsSelectable="false"
+        android:textSize="@dimen/abc_text_size_headline_material"
+        android:background="#0064b1"
+        android:padding="8dp"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#ffffffff">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_set_time"
+            android:id="@+id/textSetTime"
+            android:background="@drawable/mymav_titlebar_orange_bg"
+            android:padding="4dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView2" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/setTimeRadioGroup"
+                    android:showDividers="middle|beginning">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/action_classes_only_between"
+                        android:id="@+id/radioButtonNoClassesBetween"
+                        android:singleLine="false"
+                        android:textSize="22dp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/action_no_classes_between"
+                        android:id="@+id/radioButtonOnlyClassesBetween"
+                        android:textSize="22dp" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Between Timeframe:"
+                    android:id="@+id/texTimeFrame"
+                    android:padding="4dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:textStyle="normal"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:id="@+id/setStartTime"
+                        android:hint="@string/prompt_start_time"
+                        android:textSize="22dp"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/mymav_time_bg2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" and "
+                        android:id="@+id/textView3"
+                        android:padding="4dp"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:id="@+id/setEndTime"
+                        android:hint="@string/prompt_end_time"
+                        android:textSize="22dp"
+                        android:enabled="true"
+                        android:clickable="true"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:background="@drawable/mymav_time_bg2" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/action_set_time"
+                        android:id="@+id/buttonSetTime"
+                        android:layout_margin="4dp"
+                        android:layout_gravity="right"
+                        android:padding="12dp" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Clear Time"
+                        android:id="@+id/buttonClearTime" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

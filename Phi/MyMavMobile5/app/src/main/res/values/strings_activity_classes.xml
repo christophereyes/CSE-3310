@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="title_view_classes">VIEW CURRENT SCHEDULE</string>
+    <string name="title_activity_search_for_course">SEARCH FOR A COURSE</string>
+    <string name="title_set_time">SET TIME</string>
+
+    <string name="prompt_course_subject">Subject</string>
+    <string name="prompt_course_number">Course Number</string>
+    <string name="prompt_course_id_number">Class ID Number</string>
+    <string name="prompt_edit_full_name">Edit Full Name</string>
+    <string name="prompt_edit_first_name">Edit First Name</string>
+    <string name="prompt_edit_last_name">Edit Last Name</string>
+
+    <string name="action_set_time">Set Time</string>
+    <string name="action_no_classes_between">No classes</string>
+    <string name="action_classes_only_between">Classes only</string>
+    <string name="action_add_class">Add Class</string>
+
+</resources>

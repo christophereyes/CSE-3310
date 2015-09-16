@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/mymav_bg2"
+    android:baselineAligned="false"
+    android:focusable="false"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textLogin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#0064b1"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/title_login"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffffff"
+        android:textSize="@dimen/abc_text_size_headline_material" />
+
+    <LinearLayout
+        android:id="@+id/login_form"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/email_login_form"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ffffffff"
+            android:orientation="vertical">
+
+            <AutoCompleteTextView
+                android:id="@+id/userid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_userid"
+                android:inputType="text"
+                android:lines="1"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="20dp"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/prompt_password"
+                android:inputType="textPassword"
+                android:lines="1"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="20dp"
+                android:padding="10dp" />
+
+            <Button
+                android:id="@+id/email_sign_in_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/action_sign_in"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/create_new_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/action_create_new_user"
+                android:textSize="@dimen/abc_text_size_caption_material"
+                android:textStyle="normal"
+                android:visibility="visible" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

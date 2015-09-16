@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mymav_bg2"
+    android:id="@+id/title_student_center">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_section1"
+        android:id="@+id/titleStudentCenter"
+        android:textSize="@dimen/abc_text_size_headline_material"
+        android:textColor="#ffffffff"
+        android:background="#0064b1"
+        android:gravity="center"
+        android:padding="8dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/studentInfoView"
+        android:background="#ffffffff"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/title_student_info"
+            android:id="@+id/textStudentInfo"
+            android:padding="4dp"
+            android:background="@drawable/mymav_titlebar_orange_bg" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/prompt_full_name"
+            android:id="@+id/fullNameView"
+            android:singleLine="true"
+            android:textSize="20sp"
+            android:padding="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/prompt_email"
+            android:id="@+id/emailView"
+            android:singleLine="true"
+            android:textSize="20sp"
+            android:padding="4dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="#ffffffff"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/title_schedule_overview"
+            android:id="@+id/textScheduleOverview"
+            android:padding="4dp"
+            android:background="@drawable/mymav_titlebar_orange_bg" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Total Schedules:"
+                android:id="@+id/textTotalSchedules"
+                android:layout_marginRight="4dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="0"
+                android:id="@+id/textTotalSchedulesNumber"
+                android:textSize="20sp"
+                android:paddingLeft="4dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Active:"
+                android:id="@+id/textActiveScheduleSC"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="N/A"
+                android:id="@+id/textActiveScheduleNameSC"
+                android:singleLine="false"
+                android:textSize="20sp"
+                android:paddingLeft="4dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

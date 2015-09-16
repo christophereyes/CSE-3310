@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="title_section1">Student Center</string>
+    <string name="title_section2">Schedule Management</string>
+    <string name="title_section3">Class Management</string>
+    <string name="title_section4">Search a Class</string>
+    <string name="title_section5">Set Time Constraint</string>
+    <string name="title_section6">Profile Settings</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+
+</resources>

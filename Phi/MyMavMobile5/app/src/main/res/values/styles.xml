@@ -1,0 +1,43 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Android Ver. 14 + -->
+        <item name="android:actionBarItemBackground">@drawable/mymav_titlebar_orange_bg</item>
+
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="NewAppTheme" parent="android:Theme.Holo.Light">
+        <!-- Android Ver. 14 + -->
+
+
+    </style>
+
+    <style name="CustomTabWidget" parent="@android:style/Widget.TabWidget">
+        <item name="android:background">@drawable/mymav_titlebar_blue_bg</item>
+        <!--<item name="android:text">25dp</item>-->
+        <item name="android:actionBarWidgetTheme">@style/Base.TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse</item>
+        <item name="android:logo">@drawable/mymav_icon</item>
+        
+    </style>
+
+
+    <!-- theme for custume tab widget activity -->
+    <style name="CustomTabWidget." parent="android:Theme.Holo">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="android:actionBarTabTextStyle">@style/MyActionBarTabText</item>
+    </style>
+
+    <style name="MyActionBar">MyActionBar</style>
+
+    <style name="MyActionBarTabText" parent="android:Widget.Holo.ActionBar" >
+        <!--<item name="android:textColor">@color/action_text</item>-->
+    </style>
+
+
+
+
+
+
+</resources>

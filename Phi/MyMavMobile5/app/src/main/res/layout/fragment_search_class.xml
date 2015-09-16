@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mymav_bg2">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_section4"
+        android:id="@+id/titleSearchClass"
+        android:textSize="@dimen/abc_text_size_headline_material"
+        android:textColor="#ffffffff"
+        android:typeface="normal"
+        android:padding="8dp"
+        android:gravity="center"
+        android:background="#0064b1" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchForCourseForm"
+        android:background="#ffffffff"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/mymav_titlebar_orange_bg">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/title_search_a_class"
+                android:id="@+id/textSearchForCourse"
+                android:layout_margin="4dp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/searchSubject"
+                android:inputType="textNoSuggestions|textCapCharacters"
+                android:hint="@string/prompt_course_subject"
+                android:lines="1"
+                android:maxLines="1"
+                android:maxLength="4"
+                android:singleLine="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignBottom="@+id/searchClassButton"
+                android:selectAllOnFocus="false"
+                android:capitalize="characters" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search"
+                android:id="@+id/searchClassButton"
+                android:layout_gravity="right"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:id="@+id/searchCourseNumber"
+            android:hint="@string/prompt_course_number"
+            android:lines="1"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:numeric="integer"
+            android:maxLength="4" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:id="@+id/searchClassID"
+            android:hint="@string/prompt_course_id_number"
+            android:lines="1"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:numeric="integer"
+            android:maxLength="5" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#ffffffff">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/mymav_titlebar_orange_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/title_search_results"
+                android:id="@+id/textSearchResults"
+                android:layout_margin="4dp" />
+        </LinearLayout>
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listSearch"
+            tools:listitem="@layout/custom_layout"
+            android:dividerHeight="10dp"
+            android:divider="#ffbbbbbb"
+            android:fastScrollAlwaysVisible="false"
+            android:listSelector="@drawable/selected_no_action_background" />
+    </LinearLayout>
+</LinearLayout>

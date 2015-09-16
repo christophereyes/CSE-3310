@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mymav_bg2">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="VERIFY A SCHEDULE"
+        android:id="@+id/textView"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/mymav_titlebar_orange_bg"
+        android:padding="4dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Select a schedule to verify."
+        android:id="@+id/textView2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#0064b1"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:padding="2dp"
+        android:textColor="#ffffffff"
+        android:textSize="@dimen/abc_text_size_medium_material" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffffff"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/listVerifySchedules"
+            android:smoothScrollbar="true"
+            android:choiceMode="singleChoice"
+            android:clickable="true"
+            tools:listitem="@android:layout/simple_list_item_1"
+            android:listSelector="@drawable/mymav_titlebar_orange_bg"
+            android:dividerHeight="1dp"
+            android:divider="#ffd5d5d5" />
+
+    </LinearLayout>
+
+</LinearLayout>

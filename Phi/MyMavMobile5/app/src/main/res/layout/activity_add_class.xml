@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mymav_bg2">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffffff"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textSearchForClass"
+            android:singleLine="false"
+            android:text="@string/title_search_a_class"
+            android:background="@drawable/mymav_titlebar_orange_bg"
+            android:padding="4dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editAddSubject"
+                android:hint="@string/prompt_course_subject"
+                android:maxLength="4"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:lines="1"
+                android:inputType="textNoSuggestions|textCapCharacters"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:layout_alignBottom="@+id/buttonAddSearchClass"
+                android:capitalize="characters" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@android:string/search_go"
+                android:id="@+id/buttonAddSearchClass"
+                android:layout_gravity="right"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:gravity="center" />
+        </RelativeLayout>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editAddCourseNumber"
+            android:hint="@string/prompt_course_number"
+            android:singleLine="true"
+            android:lines="1"
+            android:inputType="number"
+            android:maxLines="1"
+            android:maxLength="4"
+            android:numeric="integer" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editAddClassID"
+            android:hint="@string/prompt_course_id_number"
+            android:singleLine="true"
+            android:lines="1"
+            android:numeric="integer"
+            android:inputType="number"
+            android:maxLength="5"
+            android:maxLines="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#ffffffff">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textSearchResults"
+            android:text="@string/title_search_results"
+            android:padding="4dp"
+            android:background="@drawable/mymav_titlebar_orange_bg"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="false"
+                android:layout_alignBottom="@+id/buttonAddClass"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Active:  "
+                    android:id="@+id/textSchedule"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/activeClassTextvew"
+                    android:hint="Schedule"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/action_add"
+                android:id="@+id/buttonAddClass"
+                android:layout_gravity="right"
+                android:singleLine="false"
+                android:layout_alignParentRight="true"
+                android:gravity="center|fill_vertical" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <ListView
+                tools:listitem="@layout/custom_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/listAddClass"
+                android:choiceMode="singleChoice"
+                android:clickable="false"
+                android:divider="#ffbbbbbb"
+                android:dividerHeight="10dp"
+                android:listSelector="@drawable/mymav_titlebar_orange_bg" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="prompt_userid">Username</string>
+    <string name="prompt_email">MyMav Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_current_password">Current Password</string>
+    <string name="prompt_current_username">Current Username</string>
+    <string name="prompt_new_password">New Password</string>
+    <string name="prompt_new_username">New Username</string>
+    <string name="prompt_confirm_password">Confirm Password</string>
+    <string name="prompt_confirm_username">Confirm Username</string>
+    <string name="prompt_first_name">First Name</string>
+    <string name="prompt_last_name">Last Name</string>
+    <string name="prompt_new_email">Enter MyMav Email</string>
+    <string name="prompt_full_name">Full Name</string>
+
+    <string name="error_invalid_username">Username invalid</string>
+    <string name="error_short_username">Username too short</string>
+    <string name="error_long_username">Username too long</string>
+    <string name="error_invalid_password">Password invalid</string>
+    <string name="error_short_password">Password to short</string>
+    <string name="error_long_password">Password to long</string>
+    <string name="error_invalid_email">Email address invalid</string>
+    <string name="error_short_email">Email to short</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="error_mismatch_username_password">Incorrect username and password credentials.</string>
+    <string name="error_mismatch_passwords">Retype passwords.</string>
+    <string name="error_incorrect_user_credentials">Incorrect information provided. Please review and retry.</string>
+    <string name="error_duplicate_user">Duplicate user.</string>
+
+</resources>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mymav_bg2">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleProfileSettings"
+        android:textSize="@dimen/abc_text_size_headline_material"
+        android:textColor="#ffffffff"
+        android:typeface="normal"
+        android:text="@string/title_section6"
+        android:singleLine="false"
+        android:background="#0064b1"
+        android:padding="8dp"
+        android:gravity="center" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:background="@drawable/mymav_bg2">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:id="@+id/usernameChangeForm"
+                android:background="#ffffffff"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/mymav_titlebar_orange_bg"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="@string/title_edit_full_name"
+                        android:id="@+id/textChangeUsername"
+                        android:layout_margin="4dp" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords|textAutoComplete|textPersonName"
+                    android:id="@+id/inputFirstName"
+                    android:hint="@string/prompt_edit_first_name"
+                    android:maxLength="20"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:lines="1"
+                    android:layout_marginBottom="4dp"
+                    android:capitalize="words"
+                    android:enabled="true"
+                    android:editable="false" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:id="@+id/inputLastName"
+                    android:hint="@string/prompt_edit_last_name"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:maxLength="20"
+                    android:singleLine="true"
+                    android:layout_marginBottom="4dp"
+                    android:capitalize="words"
+                    android:enabled="true"
+                    android:inputType="textCapWords|textPersonName|textAutoComplete" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/action_submit"
+                    android:id="@+id/buttonChangeFullName"
+                    android:layout_marginTop="8dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/passwordChangeForm"
+                android:background="#ffffffff"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/mymav_titlebar_orange_bg"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="@string/title_change_password"
+                        android:id="@+id/textChangePassword"
+                        android:layout_margin="4dp" />
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:ems="10"
+                    android:id="@+id/currentPassword"
+                    android:hint="@string/prompt_current_password"
+                    android:layout_marginBottom="4dp"
+                    android:lines="1"
+                    android:maxLength="20"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:ems="10"
+                    android:id="@+id/newPassword"
+                    android:hint="@string/prompt_new_password"
+                    android:password="false"
+                    android:maxLines="1"
+                    android:layout_marginBottom="4dp"
+                    android:singleLine="true"
+                    android:maxLength="20"
+                    android:linksClickable="false"
+                    android:lines="1" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:ems="10"
+                    android:id="@+id/confirmPassword"
+                    android:hint="@string/prompt_confirm_password"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:maxLength="20"
+                    android:lines="1"
+                    android:layout_marginBottom="4dp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/action_submit"
+                    android:id="@+id/buttonChangePassword"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/deleteUserForm"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#ffffffff"
+                android:layout_marginLeft="10dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/mymav_titlebar_orange_bg">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="@string/title_delete_user"
+                        android:id="@+id/textDeleteUser"
+                        android:layout_margin="4dp" />
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/action_delete_user"
+                    android:id="@+id/buttonDeleteUser"
+                    android:layout_gravity="right"
+                    android:layout_margin="4dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

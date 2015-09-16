@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mymav_bg2"
+    android:baselineAligned="false">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="CREATE A SCHEDULE"
+        android:id="@+id/textCreateSchedule"
+        android:padding="4dp"
+        android:background="@drawable/mymav_titlebar_orange_bg"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#ffffffff">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editNameSchedule"
+            android:inputType="textNoSuggestions|text"
+            android:lines="1"
+            android:maxLength="15"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:hint="@string/prompt_name_schedule"
+            android:layout_margin="10dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/action_add"
+            android:id="@+id/buttonAddSchedule"
+            android:padding="4dp"
+            android:layout_gravity="right" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
